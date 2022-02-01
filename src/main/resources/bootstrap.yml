@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ms-bootcointransaction
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: admin
+      password: nttdatacorazon
+  config:
+    import: optional:configserver:http://localhost:8888
+  value:
+    exchangerate: 20.36
+
