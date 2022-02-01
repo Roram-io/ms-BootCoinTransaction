@@ -1,7 +1,7 @@
 package com.nttdata.msbootcointransaction.model;
 
 
-import com.nttdata.msbootcointransaction.config.util.constants;
+import com.nttdata.msbootcointransaction.config.util.Constants;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,7 +22,7 @@ public class BootCoinTransaction {
     private String id= UUID.randomUUID().toString();
 
     private double price;
-    private double bcAmount=price / constants.exchangeRate;
+    private double bcAmount=price / Constants.exchangeRate;
 
     private String status="Pending";
 
